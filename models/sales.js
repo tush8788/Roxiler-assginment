@@ -1,5 +1,5 @@
 const mongoose=require('mongoose');
-
+//create schema
 const salesSchema=new mongoose.Schema({
     id:{
         type:Number,
@@ -35,7 +35,7 @@ const salesSchema=new mongoose.Schema({
         required:true
     }
 });
-
+//create model
 const Sales= mongoose.model("Sales",salesSchema);
-
+//export
 module.exports=Sales;
